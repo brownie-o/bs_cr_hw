@@ -1,0 +1,29 @@
+#navbar {
+  font-size: 14px;
+  height: 130px;
+  margin-left: 0;
+  margin-right: 0;
+}
+#navbar .row {
+  width: 100vw;
+}
+#navbar .navbar-toggler-icon {
+  width: 50px;
+  height: 50px;
+}
+#navbar .col {
+  align-items: center;
+}
+#navbar .dropdown-menu {
+  -webkit-backdrop-filter: blur(24px);
+          backdrop-filter: blur(24px);
+}
+@media (min-width: 992px) {
+  #navbar {
+    top: 30px;
+    margin: auto;
+  }
+  #navbar .row {
+    width: 100%;
+  }
+}

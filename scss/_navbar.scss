@@ -1,8 +1,28 @@
 #navbar{
-  height: 100px;
-  top: 30px;
-
+  font-size: 14px;
+  height: 130px;
+  margin-left: 0;
+  margin-right: 0;
+  .row{
+    width: 100vw;
+  }
   .navbar-toggler-icon{
-    width: 100px;
+    width: 50px;
+    height: 50px;
+  }
+  .col{
+    align-items: center;
+  }
+  .dropdown-menu{
+    backdrop-filter: blur(24px);
+  }
+  @include lg {
+    top: 30px;
+    margin: auto;
+    .row{
+      // padding-left: 20px;
+      // padding-right: 20px;
+      width: 100%;
+    }
   }
 }
