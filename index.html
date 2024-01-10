@@ -22,62 +22,86 @@
 
   <!-- header -->
   <div id="navbar" class="navbar-dark container position-relative">
-    <div class="row bg-dark">
-      <div class="col col-lg-5 d-flex text-light text-center ps-5 ps-md-3 flex-nowrap">
-        <ul class="nav nav-pills d-flex row-cols-5 text-center">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">ABOUT</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">CR FES</a></li>
-              <li><a class="dropdown-item" href="#">CR CUP</a></li>
-              <li><a class="dropdown-item" href="#">CR Gamging School</a></li>
-              <li><a class="dropdown-item" href="#">Team Reach</a></li>
-              <li><a class="dropdown-item" href="#">Company</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">MEMBER</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Apex Legend</a></li>
-              <li><a class="dropdown-item" href="#">Brawl Stars</a></li>
-              <li><a class="dropdown-item" href="#">Clash Royale</a></li>
-              <li><a class="dropdown-item" href="#">Fortnite</a></li>
-              <li><a class="dropdown-item" href="#">Valorant</a></li>
-              <li><a class="dropdown-item" href="#">SuperSmashBros</a></li>
-              <li><a class="dropdown-item" href="#">Street Fighter</a></li>
-              <li><a class="dropdown-item" href="#">Streamer</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">NEWS</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">CR STORE</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Online Store</a></li>
-              <li><a class="dropdown-item" href="#">CR Gaming Space</a></li>
-              <li><a class="dropdown-item" href="#">CR Store</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">CR CUP</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col col-lg-2 d-flex justify-content-center">
+    <div class="row text-bg-dark">
+      <div class="col-auto d-lg-none d-flex justify-content-center me-auto">
         <a class="navbar-brand" href="#">
-          <img src="./img/cr_logo.svg" alt="Logo" width="100"
-            class="d-inline-block align-text-top justify-content-center">
+          <img src="./img/cr_logo.svg" alt="Logo" width="100" class="d-inline-block align-text-top">
         </a>
       </div>
-      <div class="col col-lg-5 d-flex">
-        <div class="col"></div>
-        <div class="col">
+      <div class="col-auto col-lg-5 text-dark text-center ps-5 d-flex navbar-expand-lg justify-content-center">
+        <nav class="navbar navbar-expand-lg navbar-dark w-100 p-0">
+          <div class="container h-100 p-0">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#mainMenu">
+              <span class="navbar-toggler-icon" data-bs-target="#mainMenu"></span>
+            </button>
+            <div class="offcanvas offcanvas-start text-bg-dark" data-bs-hideresize="true" tabindex="-1" id="mainMenu" style="visibility: hidden; height: 100% !important;">
+              <div class="offcanvas-header d-flex d-lg-none justify-content-center">
+                <h5 class="offcanvas-title">
+                  <img src="./img/cr_logo.svg">
+                </h5>
+              </div>
+              <div class="offcanvas-body h-100">
+                <ul id="mainMenuBody" class="navbar-nav justify-content-end flex-grow-1">
+                  <li class="col nav-item dropdown text-center">
+                    <a class="nav-link nav-link-centered" data-bs-toggle="dropdown" href="#" role="button">ABOUT</a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="#">CR FES</a></li>
+                      <li><a class="dropdown-item" href="#">CR CUP</a></li>
+                      <li><a class="dropdown-item" href="#">CR Gamging School</a></li>
+                      <li><a class="dropdown-item" href="#">Team Reach</a></li>
+                      <li><a class="dropdown-item" href="#">Company</a></li>
+                    </ul>
+                  </li>
+                  <li class="col nav-item dropdown">
+                    <a class="nav-link nav-link-centered" data-bs-toggle="dropdown" href="#" role="button">MEMBER</a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="#">Apex Legend</a></li>
+                      <li><a class="dropdown-item" href="#">Brawl Stars</a></li>
+                      <li><a class="dropdown-item" href="#">Clash Royale</a></li>
+                      <li><a class="dropdown-item" href="#">Fortnite</a></li>
+                      <li><a class="dropdown-item" href="#">Valorant</a></li>
+                      <li><a class="dropdown-item" href="#">SuperSmashBros</a></li>
+                      <li><a class="dropdown-item" href="#">Street Fighter</a></li>
+                      <li><a class="dropdown-item" href="#">Streamer</a></li>
+                    </ul>
+                  </li>
+                  <li class="col nav-item">
+                    <a class="nav-link nav-link-centered" href="#">NEWS</a>
+                  </li>
+                  <li class="col nav-item dropdown">
+                    <a class="nav-link nav-link-centered" data-bs-toggle="dropdown" href="#" role="button">STORE</a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="#">Online Store</a></li>
+                      <li><a class="dropdown-item" href="#">CR Gaming Space</a></li>
+                      <li><a class="dropdown-item" href="#">CR Store</a></li>
+                    </ul>
+                  </li>
+                  <li class="col nav-item">
+                    <a class="nav-link nav-link-centered" href="#">CRCUP</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="col-auto col-lg-2 d-lg-flex justify-content-center me-auto d-none">
+        <a class="navbar-brand" href="#">
+          <img src="./img/cr_logo.svg" alt="Logo" width="100" class="d-inline-block align-text-top">
+        </a>
+      </div>
+      <div class="col col-lg-5 d-none d-lg-flex">
+        <div class="col col-lg-7">
+
         </div>
-        <!-- https://getbootstrap.com/docs/5.3/components/offcanvas/ -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar">
-          <span class="navbar-toggler-icon top-50  position-relative"></span>
-        </button>
+        <div class="col-auto col-lg-5">
+          <!-- https://getbootstrap.com/docs/5.3/components/offcanvas/ -->
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon top-50 position-relative"></span>
+          </button>
+        </div>
         <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar">
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Crazy Raccoon</h5>
