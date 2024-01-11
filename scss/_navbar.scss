@@ -65,3 +65,27 @@
   align-items: center;
   height: 100%;
 }
+
+.skewbox{
+  /* 發光外框 */
+  ::before{
+    content: '';
+    position: absolute;
+    transform: skewX(-10deg);
+    border: 3px solid #1e2128;
+    transition: ease 0.4s;
+  }
+}
+
+#searchBar{
+  background: #212529;
+}
+
+.modal-body{
+  background: #212529;
+  // backdrop-filter: 0.7;
+}
+
+.bi-twitter:hover {
+  fill: rgb(214, 38, 38); /* 你想要的悬停时的颜色 */
+}
