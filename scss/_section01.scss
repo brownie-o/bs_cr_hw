@@ -1,0 +1,27 @@
+#section01 {
+  // padding: 10rem 0;
+  top: 100vh;
+
+  .container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .card {
+    border: none;
+    border-radius: 0;
+    padding: 1rem;
+  }
+
+  #swiper02 {
+    img{
+      height: 20vh;
+    }
+  }
+}

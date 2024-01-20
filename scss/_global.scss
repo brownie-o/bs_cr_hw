@@ -1,18 +1,9 @@
-.skewbox {
-  padding: 15px 30px;
-  
-  ::after {
-    /* 發光線線 */
-    content: '';
-    position: absolute;
-    background: #f8f9fa;
-    display: block;
-    width: 20px;
-    height: 100%;
-    left: -30%;
-    top: -5%;
-    opacity: 0.7;
-    transform: skewX(10deg);
-    transition: ease 1s;
-  }
+#section01{
+  position: relative;
+  z-index: 1000;
+}
+
+body{
+  background: #212529;
+  ;
 }
